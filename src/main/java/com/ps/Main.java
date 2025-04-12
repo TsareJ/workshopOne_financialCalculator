@@ -13,6 +13,7 @@ public class Main {
         out.println("2) Vehicle Appreciation Calculator");
         out.println("3) Getting Old Fund Calculator");
         out.println("Select from my form (1-3): ");
+
         int givenCommand = scanner.nextInt();
 
         switch(givenCommand) {
@@ -35,11 +36,19 @@ public class Main {
                 double monthlyPayment = principal * (monthlyRate *factor) / (factor-1);
                 double totalInterest = (monthlyPayment * numPayments) - principal;
 
+                System.out.printf("Monthly Payment: $%.2f%n", monthlyPayment);
+                System.out.printf("Total Interest Paid: $%.2fn", totalInterest);
+
 
                 break;
 
 
             case 2:
+                //Vehicle Appreciation Calculator
+                System.out.println("Vehicle Appreciation Calculator has risen!");
+                System.out.println("Enter Initial Vehicle Value: ");
+                float initialDeposit = scanner.nextFloat();
+
 
 
 
