@@ -13,15 +13,33 @@ public class Main {
         System.out.println("Select from my form (1-3): ");
         int givenCommand = scanner.nextInt();
 
-        switch (givenCommand) {
+        switch(givenCommand) {
 
             case 1:
                 //Mortgage Calculator
-                System.out.println("The Mortgage Calculator has risen!")
-                System.out.println("Enter principle loan amount: ");
+                System.out.println("The Mortgage Calculator has risen!");
+                System.out.println("Enter principle loan amount ($): ");
                 System.out.println("Enter interest rate: ");
                 System.out.println("Enter loan term in years: ");
+
+                break;
+
+
+            case 2:
+
+
+
+                break;
+
+
+            case 3:
+
+
+
+                break;
+
             default:
+                System.out.println("Form not selected");
 
 
         }
