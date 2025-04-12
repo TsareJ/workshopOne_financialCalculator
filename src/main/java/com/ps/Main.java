@@ -10,7 +10,7 @@ public class Main {
         System.out.println("1) Mortgage Calculator");
         System.out.println("2) Vehicle Appreciation Calculator");
         System.out.println("3) Getting Old Fund Calculator");
-        System.out.println("Select from my form (1-3): ");
+        System.out.println("Select from my form (1-3): 1");
         int givenCommand = scanner.nextInt();
 
         switch(givenCommand) {
@@ -18,15 +18,22 @@ public class Main {
             case 1:
                 //Mortgage Calculator
                 System.out.println("The Mortgage Calculator has risen!");
-                System.out.println("Enter principal loan amount ($): ");
-                System.out.println("Enter interest rate: ");
-                System.out.println("Enter loan term in years: ");
+                System.out.println("Enter principal loan amount ($): 53000");
+                System.out.println("Enter interest annually rate: 7.625");
+                System.out.println("Enter loan term in years: 15 ");
 
                 float principal = scanner.nextFloat();
-                double interestRate = scanner.nextDouble();
+                double interestRateAnnually = scanner.nextDouble();
                 byte loanTerm = scanner.nextByte();
 
-                //
+                double monthlyRate = (interestRateAnnually / 100) /12;
+                int numPayments = loanTerm * 12;
+
+                double factor = Math.multiplyExact((long) monthlyRate, numPayments);
+                double monthlyPayment = principal * (monthlyRate * factor) / (factor-1);
+                double totalInterest = monthlyPayment * numPayments - principal;
+
+                System.out.printf("")
 
                 break;
 
