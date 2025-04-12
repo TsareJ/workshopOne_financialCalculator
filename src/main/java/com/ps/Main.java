@@ -18,9 +18,15 @@ public class Main {
             case 1:
                 //Mortgage Calculator
                 System.out.println("The Mortgage Calculator has risen!");
-                System.out.println("Enter principle loan amount ($): ");
+                System.out.println("Enter principal loan amount ($): ");
                 System.out.println("Enter interest rate: ");
                 System.out.println("Enter loan term in years: ");
+
+                float principal = scanner.nextFloat();
+                double interestRate = scanner.nextDouble();
+                byte loanTerm = scanner.nextByte();
+
+                //
 
                 break;
 
