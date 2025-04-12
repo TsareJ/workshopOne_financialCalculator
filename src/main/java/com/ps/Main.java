@@ -46,10 +46,16 @@ public class Main {
             case 2:
                 //Vehicle Appreciation Calculator
                 System.out.println("Vehicle Appreciation Calculator has risen!");
+
                 System.out.println("Enter Initial Vehicle Value: ");
                 float initialDeposit = scanner.nextFloat();
+                System.out.println("Enter Annual Appreciation Rate: ");
+                double annualAppreciation = scanner.nextDouble();
+                System.out.println("Years with Vehicle: ");
+                int yearsWithVehicle = scanner.nextInt();
 
-
+                double vehicleAppreciation = initialDeposit * Math.pow(1 + (annualAppreciation/365), 365 * yearsWithVehicle);
+                System.out.printf("Your Vehicle can be worth:  !", vehicleAppreciation);
 
 
                 break;
