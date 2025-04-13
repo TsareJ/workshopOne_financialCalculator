@@ -43,7 +43,7 @@ public class Main {
 
             case 2:
                 //Vehicle Appreciation Calculator
-                System.out.println("Vehicle Appreciation Calculator has risen!");
+                System.out.println("The Vehicle Appreciation Calculator has risen!");
 
                 System.out.println("Enter Initial Vehicle Value: ");
                 float initialValue = scanner.nextFloat();
@@ -58,7 +58,7 @@ public class Main {
                 break;
 
             case 3:
-                System.out.println("Loading...");
+                System.out.println("The Getting Old Fund");
 
                 break;
 
