@@ -60,6 +60,13 @@ public class Main {
             case 3:
                 System.out.println("The Getting Old Fund");
 
+                System.out.print("Enter monthly payout ($): ");
+                float monthlyPayout = scanner.nextFloat();
+                System.out.print("Annual Interest");
+                double annualInterestRate = scanner.nextDouble();
+                System.out.print("Payout period in years");
+                int payoutInYears = scanner.nextInt();
+
                 break;
 
             default:
