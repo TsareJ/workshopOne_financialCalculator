@@ -12,7 +12,7 @@ public class Main {
         out.println("1) Mortgage Calculator");
         out.println("2) Vehicle Appreciation Calculator");
         out.println("3) Getting Old Fund Calculator");
-        out.println("Select from my form (1-3): ");
+        out.println("Select from my form: ");
 
         int givenCommand = scanner.nextInt();
 
@@ -22,12 +22,14 @@ public class Main {
                 //Mortgage Calculator
                 System.out.println("The Mortgage Calculator has risen!");
                 System.out.println("Enter principal loan amount ($): ");
-                System.out.println("Enter interest annually rate: ");
-                System.out.println("Enter loan term in years: ");
-
                 float principal = scanner.nextFloat();
+                System.out.println("Enter interest annually rate: ");
                 double interestRateAnnually = scanner.nextDouble();
+                System.out.println("Enter loan term in years: ");
                 short loanTerm = scanner.nextShort();
+
+
+
 
                 double monthlyRate = (interestRateAnnually / 100 / 12);
                 int numPayments = loanTerm * 12;
@@ -62,13 +64,14 @@ public class Main {
 
 
             case 3:
+                System.out.println("Loading...");
 
 
 
                 break;
 
             default:
-                out.println("Form not selected");
+                System.out.println("Form not selected");
 
 
         }
