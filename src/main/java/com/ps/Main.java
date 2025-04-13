@@ -71,6 +71,8 @@ public class Main {
                 double monthlyInterestRate = (annualInterestRate / 100) / 12;
                 int totalPayments = payoutInYears * 12;
 
+                float presentValue = (monthlyPayout * (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) / monthlyInterestRate);
+
 
                 break;
 
