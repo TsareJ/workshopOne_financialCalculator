@@ -58,6 +58,7 @@ public class Main {
                 break;
 
             case 3:
+                // The Getting Old Fund Calculator
                 System.out.println("The Getting Old Fund");
 
                 System.out.print("Enter monthly payout ($): ");
@@ -66,6 +67,10 @@ public class Main {
                 double annualInterestRate = scanner.nextDouble();
                 System.out.print("Payout period in years");
                 int payoutInYears = scanner.nextInt();
+
+                double monthlyInterestRate = (annualInterestRate / 100) / 12;
+                int totalPayments = payoutInYears * 12;
+
 
                 break;
 
